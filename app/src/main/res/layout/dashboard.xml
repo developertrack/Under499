@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        layout="@layout/action_tab"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/flipkart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:background="#F7E830">
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/flipkart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/amazon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:background="#232F3E">
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/amazon" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/aliexpress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:background="#5677D8">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/aliexpress" />
+        </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/jabong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/jabong" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/infibeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#666666">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/infibeam" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/shopclues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:background="#15A0B3">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/shopclues" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ebay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ebay" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/snapdeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:background="#E40046">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/snapdeal" />
+        </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

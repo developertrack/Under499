@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:gravity="center_horizontal|center_vertical">
+
+
+        <TextView
+            android:text="Store 499"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#232F3E"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        layout="@layout/action_tab"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/fashion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_margin="4dp"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:background="@drawable/ic_fashion" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="FASHION"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:layout_margin="6dp">
+
+                    <ImageView
+                        android:layout_margin="4dp"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:background="@drawable/ic_bag" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="BAGS"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:id="@+id/shoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_shoes" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="FOOTWEAR"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/appliances"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_appliances" />
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:padding="4dp"
+                    android:text="APPLIANCES"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#232F3E"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/jwellery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_jwellery" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="JWELLERY"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/lingere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_lingerie" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="LINGERIE"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/watch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_watch" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="WATCH"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/sunglasses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_sunglass" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="SUNGLASSES"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/personalcare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_personalcare" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:padding="4dp"
+                        android:text="PERSONAL CARE"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#232F3E"/>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:visibility="invisible"
+                    android:clickable="false"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_sunglass" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

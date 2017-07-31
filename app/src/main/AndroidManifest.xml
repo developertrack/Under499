@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.publiseyez.piyushpratap2009.under499">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashboardFashion"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".DashboardAppliances"></activity>
+        <activity android:name=".DashboardJwellery"></activity>
+        <activity android:name=".DashboardLingerie"></activity>
+        <activity android:name=".DashboardPersonalCare"></activity>
+        <activity android:name=".DashboardShoes"></activity>
+        <activity android:name=".DashboardWatch"></activity>
+        <activity android:name=".DashboardSunglasses"></activity>
+        <activity android:name=".DashboardBags"></activity>
+        <activity android:name=".DashboardHandBags"></activity>
+        <activity android:name=".DashboardlaptopBags"></activity>
+        <activity android:name=".DashboardShoulderbags"></activity>
+    </application>
+
+</manifest>

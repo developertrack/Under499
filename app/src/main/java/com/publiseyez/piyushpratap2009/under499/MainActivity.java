@@ -4,11 +4,14 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     ProgressDialog pd;
     private float xCor;
     Intent web_url;
+    Handler handler;
+    Thread thread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +34,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         CookieManager cm = CookieManager.getInstance();
         cm.setAcceptCookie(true);
-
         webpage=(WebView)findViewById(R.id.webpage);
+//        if (Build.VERSION.SDK_INT >= 21) {
+//            CookieSyncManager.createInstance(MainActivity.this);
+//            CookieManager cookieManager = CookieManager.getInstance();
+//            cookieManager.removeAllCookie();
+//            cookieManager.setAcceptThirdPartyCookies(webpage, true);
+//            cookieManager.setAcceptCookie(true);
+//            webpage.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
+//        }
+
+
         pd = new ProgressDialog(MainActivity.this);
         pd.setMessage("loading");
-
+        pd.show();
 
         web_url=getIntent();
 
@@ -51,10 +65,12 @@ public class MainActivity extends AppCompatActivity {
         webpage.setBackgroundColor(Color.TRANSPARENT);
         webpage.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_INSET);
         webpage.setWebViewClient(new WebViewClient() {
+
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            pd.show();
+
+
             invalidateOptionsMenu();
         }
 
@@ -68,13 +84,16 @@ public class MainActivity extends AppCompatActivity {
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
             invalidateOptionsMenu();
-            pd.dismiss();
+
+                pd.dismiss();
+
         }
 
         @Override
         public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
             super.onReceivedError(view, request, error);
             invalidateOptionsMenu();
+
         }
     });
         webpage.clearCache(true);
@@ -102,6 +121,23 @@ public class MainActivity extends AppCompatActivity {
     });
 
         webpage.loadUrl(web_url.getStringExtra("url"));
+
+//        thread = new Thread() {
+//            @Override
+//            public void run() {
+//                try {
+//                    Thread.sleep(6000);
+//                    handler.post(new Runnable() {
+//                        public void run() {
+//                            pd.dismiss();
+//                        }
+//                    });
+//                } catch (InterruptedException e) {
+//                }
+//            }
+//        };
+//
+//        thread.start();
 
 }
 }
